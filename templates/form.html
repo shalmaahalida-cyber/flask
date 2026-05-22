@@ -1,26 +1,38 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Cute Form</title>
 
     <link rel="stylesheet"
     href="{{ url_for('static', filename='style.css') }}">
+
 </head>
+
 <body>
-    <div class="container">
-        <h2>Demo Text</h2>
-        <form action="/" method="post">
-            <input type="text"
-            name="namaDepan"
-            placeholder="Nama Depan" />
 
-            <input type="text"
-            name="namaBelakang"
-            placeholder="Nama Belakang" />
+<div class="container">
 
-            <p>
-                <input type="submit" value="Kirim" />
-            </p>
-        </form>
-    </div>
+    <h1>Welcome</h1>
+
+    <form action="/" method="POST">
+
+        <input type="text"
+        name="namaDepan"
+        placeholder="Nama Depan">
+
+        <input type="text"
+        name="namaBelakang"
+        placeholder="Nama Belakang">
+
+        <button type="submit">
+            Kirim
+        </button>
+
+    </form>
+
+</div>
+
 </body>
 </html>
